@@ -50,6 +50,13 @@
 - <ins>id_f</ins> ? crea_date_f
 
 
-**finale MCD**
+**MCD**
 
-![DCM_draw](assets/img/finaleMCD.png)
+![DCM_draw](assets/img/MCD.png)
+
+
+**MLD**
+
+
+![DCM_draw](assets/img/MLD.png)
+

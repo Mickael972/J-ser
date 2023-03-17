@@ -52,4 +52,4 @@
 
 **finale MCD**
 
-![DCM_draw](assets/img/finaleMCD.png.png)
+![DCM_draw](assets/img/finaleMCD.png)

@@ -38,7 +38,7 @@
 |text_co             | text du commentaire        |    AN    |    1000    |                 |
 |id_f                | id du favoris              |    N     |     10     |   *unsigned*    |
 |crea_date_f         | date de cre du favoris     |   date   |     10     |                 |
-|-------------------------------------------------------------------------------------------|
+
 
 
 **Dependance fonctionnel**

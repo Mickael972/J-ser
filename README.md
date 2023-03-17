@@ -48,3 +48,8 @@
 - <ins>id_c</ins> ? name_c, des_c, lien_c, img_c, prix_c, crea_date_c
 - <ins>id_co</ins> ? text_co
 - <ins>id_f</ins> ? crea_date_f
+
+
+**finale MCD**
+
+![DCM_draw](assets/img/finale%20MCD.png)

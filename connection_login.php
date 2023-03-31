@@ -1,8 +1,23 @@
-<?php require_once __DIR__.'/bdd/pdo.php';
+<?php require_once __DIR__ . '/bdd/pdo.php';
+session_start();
 
 $name = $_POST['name'];
 $password = $_POST['password'];
-$stmt = $conn->prepare('SELECT * FROM utilisateurs WHERE name = :name');
-$stmt->execute(array(':name' => $name));
-$row = $stmt->fetch();
-var_dump($row);
+var_dump($_POST);
+$stmt = $pdo->prepare("SELECT * FROM utilisateurs WHERE null, name=:nom AND mdp=:pass");
+
+$result = $stmt->execute([
+    null,
+    'nom' => $name,
+    'mdp' => $password
+]);
+
+if ($result == true)
+{
+    $_SESSION ['isconnected'] = true;
+    header('Location: index.php');
+}
+else{
+    exit;
+}
+var_dump($result);

@@ -1,7 +1,7 @@
 <?php require_once 'layout/header.php'?>
 
 
-
+<h1>je suis connecté</h1>
 
 
 

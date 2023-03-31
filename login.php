@@ -1,4 +1,6 @@
-<?php require_once __DIR__ . '/layout/header.php'; ?>
+<?php require_once __DIR__ . '/layout/header.php'; 
+require_once __DIR__ . '/layout/modal.php'?>
+
 
 <div class="container-fluid text-light d-flex align-items-center flex-column justify-content-center custom-background">
     <h1 class="text-center mt-5">Login</h1>
@@ -14,6 +16,9 @@
         </div>
         <button type="submit" class="btn btn-primary">Log In</button>
     </form>
+    <div class="mt-4">
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Create Account</button>
+    </div>
 </div>
 
 

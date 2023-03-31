@@ -1,0 +1,11 @@
+{
+    "name": "root/project_jser",
+    "description": "n",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\":"src/"
+        }
+    }
+    
+}

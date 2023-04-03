@@ -1,5 +1,5 @@
 <?php require_once __DIR__ . '/layout/header.php'; 
-require_once __DIR__ . '/layout/modal.php'?>
+require_once __DIR__ . '/layout/register_modal.php'?>
 
 
 <div class="container-fluid text-light d-flex align-items-center flex-column justify-content-center custom-background">

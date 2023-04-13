@@ -3,7 +3,7 @@
 require_once 'bdd/pdo.php';
 require_once 'functions/functions.php' ;
 
-
+// recupération des données post email , pseudo , password//
 ['email' => $email, 'pseudo' => $pseudo, 'password' => $password] = $_POST;
 
 if (empty($_POST) ||!isset($_POST['email']) ||!isset($_POST['password']) ||!isset($_POST['pseudo'])) {
@@ -11,7 +11,7 @@ if (empty($_POST) ||!isset($_POST['email']) ||!isset($_POST['password']) ||!isse
     die();
 }
 
-// pour ma requète de création d'utilisateur j'ai eu une erreur de type "parameter number of bound variables" et donc j'ai inséré des paramtres anonymes dans ma query//
+// pour ma requète d'insertion d'utilisateur j'ai eu une erreur de type "parameter number of bound variables" et donc j'ai inséré des paramtres anonymes dans ma query//
 $query = "INSERT INTO utilisateurs VALUES(?, ?, ?, ?)";
 $stmt = $pdo->prepare($query);
 

@@ -7,7 +7,7 @@
 
     <form class="d-flex flex-column justify-content-center align-items-center" action="search_results_shoes.php" method="GET">
         <div class="mb-3">
-        <input class="form-control me-2" type="search" placeholder="Your J's research here" aria-label="Search" name="q" value="<?php echo $_GET['q'] ?? ''; ?>" />
+        <input class="form-control me-2" type="search" placeholder="Your J's research here" aria-label="Search" name="search" value="<?php echo $_GET['search'] ?? ''; ?>" />
         </div>
         <input type="submit" class="btn btn-primary" value="Search">
     </form>

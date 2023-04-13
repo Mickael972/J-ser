@@ -1,5 +1,9 @@
 <?php
 
+/**
+ *  configuration du fichier de connexion à la base de donnée en utilisant PDO.
+ */
+
 $dbconfig = parse_ini_file(__DIR__ . '/../config/db.ini');
 [
   'DB_HOST' => $host,
@@ -11,7 +15,10 @@ $dbconfig = parse_ini_file(__DIR__ . '/../config/db.ini');
 ] = $dbconfig;
 
 $dsn = "mysql:host=$host;port=$port;dbname=$name;dbcharset=$charset;dbuser=$user;dbpassword=$password";
-$options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
+$options = [
+  PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+  PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+];
 
 
 try {

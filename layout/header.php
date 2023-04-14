@@ -1,4 +1,4 @@
-<?php require_once __DIR__ . '/bdd/pdo.php'; 
+<?php 
 session_start()
 ?>
 

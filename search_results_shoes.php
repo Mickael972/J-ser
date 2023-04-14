@@ -1,28 +1,22 @@
 <?php
+require_once __DIR__ . '/import_shoes.php';
+require_once "functions/functions.php";
 // Page de résultats de recherche dans la base de données (pas dans le fichier)
 require_once __DIR__ .'/bdd/pdo.php';
-
-if (!isset($_get['search'])){
-    exit('wrong search');
+$search = strtolower($_GET['q']);
+if (empty($search)){
+    redirect("index.php");
 }
 
-// je recupère les données 
-require_once __DIR__ . '/import_shoes.php';
-
-// je recupère les parametres d'url
-$searchShoeName = $_GET['search'];
-
-//je fait une recherche par nom 
-$searchShoeName = "%$searchShoeName%";
-
-// selection des chaussures correspondant à la recherche dans la bdd
-$stmt = $pdo->prepare("SELECT * FROM chaussures WHERE name LIKE :searchShoeName");
-
+$stmt = $pdo->prepare("SELECT * FROM chaussures WHERE name LIKE '%search%'");
 $stmt->execute();
+$results = $stmt->fetchAll();
 
-$result = $stmt->fetchAll();
+var_dump($results);
 
-// j'affiche les resultats de la recherche 
+
+
+
 
 
 

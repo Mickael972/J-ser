@@ -8,8 +8,8 @@
       <a class="navbar-brand" href="#"><img src="/assets/img/logo.php.png" alt="icon" width="50px" height="50px"></a>
 
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <form class="d-flex" role="search" action="search_results_shoes.php" method="GET">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
         <button class="btn btn-outline-danger" type="submit">Search</button>
       </form>
     </div>

@@ -9,7 +9,7 @@
 
       </ul>
       <form class="d-flex" role="search" action="search_results_shoes.php" method="GET">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
+        <input class="form-control me-2" type="text" placeholder="Search" name="q">
         <button class="btn btn-outline-danger" type="submit">Search</button>
       </form>
     </div>
